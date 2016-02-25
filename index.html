@@ -24,6 +24,8 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
 
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -50,7 +52,10 @@
       <div class="jumbotron">
         <h1>Welcome Weebs!</h1>
         <p class="lead">This website will consist of my favorite anime and manga titles. And maybe some game titles, so if you're intrested, please feel free to look at this website! The button will take you to a random link in this website.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Look at the rainbow!</a></p>
+
+        <form>
+<input class="btn btn-lg btn-success" type="button" value="Look at the rainbow!" onClick="random_3()">
+</form>
       </div>
 
       <div class="row marketing">
@@ -86,5 +91,20 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="javascript">
+    function random_3(){
+    var myrandom=Math.round(Math.random()*2)
+    var link1="waifu.html"
+    var link2="songs.html"
+    var link3="series.html"
+    if (myrandom==0)
+        window.location=link1
+    else if (myrandom==1)
+        window.location=link2
+    else if (myrandom==2)
+        window.location=link3
+}</script>
+
   </body>
 </html>
