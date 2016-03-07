@@ -16,13 +16,53 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-git.js"></script>
     <!-- Custom styles for this template -->
     <link href="jumbotron-narrow.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
+    <script type='text/javascript'>//<![CDATA[
+    $(window).on('load', function() {
+    $(document).ready(function() {
+        var playing = false;
+
+        $('img#button').click(function() {
+
+            if (playing == false) {
+                document.getElementById('player').play();
+                playing = true;
+
+            } else {
+                document.getElementById('player').pause();
+                playing = false;
+            }
+
+
+        });
+
+        $('img#button1').click(function() {
+
+            if (playing == false) {
+                document.getElementById('player1').play();
+                playing = true;
+
+            } else {
+                document.getElementById('player1').pause();
+                playing = false;
+            }
+
+
+        });
+
+
+
+    });
+    });//]]>
+
+    </script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,6 +72,27 @@
   </head>
 
   <body>
+
+    <script type='text/javascript'>//<![CDATA[
+    $(document).ready(function() {
+        var playing = false;
+
+        $('img#button').click(function() {
+
+            if (playing == false) {
+                document.getElementById('player').play();
+                playing = true;
+
+            } else {
+                document.getElementById('player').pause();
+                playing = false;
+            }
+
+
+        });
+    });
+
+    </script>
 
     <div class="container">
       <div class="header clearfix">
@@ -50,7 +111,7 @@
       <div class="jumbotron">
         <h1>Favorite Openings and Endings</h1>
         <p class="lead">These are my music tatses that started to form at the end of freshman. This list will also include vocaloid songs!</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Look at the rainbow!</a></p>
+
       </div>
 
       <div class="row marketing">
@@ -67,7 +128,7 @@
 
 
           <h4>Tokyo Teddy Bear: Rin Kagamine</h4>
-          <p>This is one of the more "emo" of the songs, if you will. From what I understand from the english translation, this song is about a teen who thinks that she is imperfect, and is told so by her peers, and possibly family too. She talks about in the song that their "big words" don't phase her. And in some scenes she's seen in what I can only assume is a hospital room, which leads me to believe that she was suicidal. It's a good song but the lyrics might be a trigger...</p>
+          <p>This is one of the more "emo" of the songs, if you will. From what I understand from the english translation, this song is about a teen who thinks that she is imperfect, and is told so by her peers, and possibly family too. She talks about in the song that their "big words" don't phase her. And in some scenes she's seen in what I can only assume is a hospital room, which leads me to believe that she was suicidal, and is on suicide watch. It's a good song but the lyrics might be a trigger...</p>
           <img class="img-responsive" src="img/TokyoTeddyBear.gif" >
 
         </div>
@@ -78,15 +139,17 @@
           <img class="img-responsive" src="img/RemoteController.gif" >
 
 
-          <h4>Wave: Giga - p</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-          <img class="img-responsive" src="img/Wave.jpg" >
+          <h4 >Wave: Giga - p</h4>
+          <p>This is another vocaloid song, featuring Len and Kaito. I've been listening to the song and anylising the lyrics for a while now. And I've come to the conclusion that this song is about falling in love with an alien, and wanting to dance with it... I know, it's weird, But the beat is good.</p>
+          <audio id="player" src="m/wave.mp3"> </audio>
+          <img id="button" class="img-responsive" src="img/Wave.jpg" >
 
 
 
           <h4>RWBY: All Openings</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <img class="img-responsive" src="img/RWBY.gif" >
+          <p>The RWBY openings actually have some sort of correlation. The first </p>
+          <audio id="player1" src="m/rwby.mp3"> </audio>
+          <img id="button1"class="img-responsive" src="img/RWBY.gif" >
 
         </div>
       </div>
