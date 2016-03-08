@@ -56,6 +56,80 @@
 
         });
 
+        $('img#button2').click(function() {
+
+            if (playing == false) {
+                document.getElementById('player2').play();
+                playing = true;
+
+            } else {
+                document.getElementById('player2').pause();
+                playing = false;
+            }
+
+
+        });
+
+
+                $('img#button3').click(function() {
+
+                    if (playing == false) {
+                        document.getElementById('player3').play();
+                        playing = true;
+
+                    } else {
+                        document.getElementById('player3').pause();
+                        playing = false;
+                    }
+
+
+                });
+
+
+                        $('img#button4').click(function() {
+
+                            if (playing == false) {
+                                document.getElementById('player4').play();
+                                playing = true;
+
+                            } else {
+                                document.getElementById('player4').pause();
+                                playing = false;
+                            }
+
+
+                        });
+
+
+                                $('img#button5').click(function() {
+
+                                    if (playing == false) {
+                                        document.getElementById('player5').play();
+                                        playing = true;
+
+                                    } else {
+                                        document.getElementById('player5').pause();
+                                        playing = false;
+                                    }
+
+
+                                });
+
+
+                                        $('img#button6').click(function() {
+
+                                            if (playing == false) {
+                                                document.getElementById('player6').play();
+                                                playing = true;
+
+                                            } else {
+                                                document.getElementById('player6').pause();
+                                                playing = false;
+                                            }
+
+
+                                        });
+
 
 
     });
@@ -118,25 +192,28 @@
         <div class="col-lg-6">
           <h4>Noragami Aragoto: Opening</h4>
           <p>Words cannot explain how much I love this opening! The drums and guitar are sooooo awesome! You know an openings good when you find the English cover just to use it in a project.</p>
-          <a href= "https://www.youtube.com/watch?v=3oFTHxkOzjE">
-            <img class="img-responsive" src="img/NoragamiAragato.gif" ></a>
+          <audio id="player6" src="m/noragami.mp3"> </audio>
+            <img id="button6" class="img-responsive" src="img/NoragamiAragato.gif" ></a>
 
 
           <h4>DanganRonpa: THE WHOLE SOUNDTRACK</h4>
           <p>As most critics know, one of the things that set the mood in the story the best is the music. This game and anime hit the nail right on the head with that idea. The music fits in every single scene so well!</p>
-          <img class="img-responsive" src="img/DanganRonpa.gif" >
+          <audio id="player5" src="m/danganronpa.mp3"> </audio>
+          <img id="button5" class="img-responsive" src="img/DanganRonpa.gif" >
 
 
           <h4>Tokyo Teddy Bear: Rin Kagamine</h4>
           <p>This is one of the more "emo" of the songs, if you will. From what I understand from the english translation, this song is about a teen who thinks that she is imperfect, and is told so by her peers, and possibly family too. She talks about in the song that their "big words" don't phase her. And in some scenes she's seen in what I can only assume is a hospital room, which leads me to believe that she was suicidal, and is on suicide watch. It's a good song but the lyrics might be a trigger...</p>
-          <img class="img-responsive" src="img/TokyoTeddyBear.gif" >
+          <audio id="player3" src="m/tokyo.mp3"> </audio>
+          <img id="button3" class="img-responsive" src="img/TokyoTeddyBear.gif" >
 
         </div>
 
         <div class="col-lg-6">
           <h4>Remote Controller: Kagamine Len & Rin</h4>
           <p>Now to a happier song! Remote Controller is a song, telling society that media is controlling us. Being demonstrated in multiple scenes when the 2 vocaloids take control over each other.</p>
-          <img class="img-responsive" src="img/RemoteController.gif" >
+          <audio id="player2" src="m/remote.mp3"> </audio>
+          <img id="button2" class="img-responsive" src="img/RemoteController.gif" >
 
 
           <h4 >Wave: Giga - p</h4>
